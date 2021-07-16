@@ -15,14 +15,13 @@ Refer it to the binning section of the repo
 ## Minibatch Sampling (Stage 3)
 ### How to sample the minibatch from bins
 
-Refer it to a folder that shows a demo of the  sampling methods (in a colab notebook or a gf that shows demo of the sampling)
-
+Refer it to a folder that shows a demo of the  sampling methods (in a colab notebook or a gif that shows demo of the sampling)
 
 ## Optimization (Stage 4)
 ## How to include strata aware optimisation in your model
 Add details of how to add the loss function ( the loss function defined file should be placed in this folder) 
 
 ## Evaluation (Stage-5)
-## How to evaulate your networks performance at a bin level 
+## How to evaluate your networks performance at a bin level 
 
 Add a notebook that akes the model and architecture loads it return the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website).
