@@ -5,7 +5,7 @@
 
 ## Overview Diagram
 
-add the teaser 
+![here](images/main.jpg) 
 
 ## Data Preparation & Splits (Stages(1,2))
 ### How to find bins for new dataset
