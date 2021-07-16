@@ -24,4 +24,4 @@ Add details of how to add the loss function ( the loss function defined file sho
 ## Evaluation (Stage-5)
 ## How to evaluate your networks performance at a bin level 
 
-Add a notebook that akes the model and architecture loads it return the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website).
+Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range.
