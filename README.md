@@ -19,10 +19,10 @@ Refer it to a folder that shows a demo of the  sampling methods (in a colab note
 
 
 ## Optimization (Stage 4)
-## How to include strata awware optimisation in your model
-Add details of how to add the loss fucntion ( the loss function defined file should be placed in this folder) 
+## How to include strata aware optimisation in your model
+Add details of how to add the loss function ( the loss function defined file should be placed in this folder) 
 
 ## Evaluation (Stage-5)
 ## How to evaulate your networks performance at a bin level 
 
-Add a notebook that akes the model and architecture loads it return the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website)
+Add a notebook that akes the model and architecture loads it return the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website).
