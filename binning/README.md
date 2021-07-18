@@ -1,6 +1,11 @@
 # 3.2 Revisiting Stage 2 (Creating Data splits)
 
-This folder contains the method in which the data-splits are created.
+This folder contains the method in which the data-splits are created. This procedure partions the count range into balanced strata (bins) using Bayesian optimality criterion (Sec 3). The procedure can be summarised as shown below.
+
+![algo](algorithm1.jpg)
+![algo2](algorithm2.jpg)
+
+
 
 Procedure for generating bins:
 1. First put your dataset in form of ```image_name,image_count``` in a ```.txt```.
