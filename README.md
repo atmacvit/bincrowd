@@ -7,26 +7,26 @@
 
 ![here](images/main.jpg) 
 
-## Data Preparation & Splits (Stages(1,2)) / Binning
+## Step 1 : Data Preparation & Splits (Stages(1,2)) / Binning -- Sec 3.2
 ### How to find bins for new dataset
 
 We recommend to divide the entire range of counts into strata to later sample images from these strata. The procedure for data split generation is provided in the folder named ```binning```.
 
-## Minibatch Sampling (Stage 3)
+## Step 2 : Minibatch Sampling (Stage 3) -- Sec 3.3
 ### How to sample the minibatch from bins
 
 We explored two methods of sampling images from strata.
 1. Round Robin sampling
 2. Random sampling
-<br>
+
 For a simple visualisation of the procedure you can refer to the folder named ```sampling```.
 
 
-## Optimization (Stage 4)
-## How to include strata aware optimisation in your model
+## Step 3 : Optimization (Stage 4) -- Sec 3.4
+### How to include strata aware optimisation in your model
 Add details of how to add the loss function ( the loss function defined file should be placed in this folder) 
 
-## Evaluation (Stage-5)
-## How to evaluate your networks performance at a bin level 
+## Step 4 : Evaluation (Stage-5) -- Sec 3.5
+### How to evaluate your networks performance at a bin level 
 
 Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range.
