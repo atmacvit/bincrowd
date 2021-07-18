@@ -7,15 +7,19 @@
 
 ![here](images/main.jpg) 
 
-## Data Preparation & Splits (Stages(1,2))
+## Data Preparation & Splits (Stages(1,2)) / Binning
 ### How to find bins for new dataset
 
-Refer it to the binning section of the repo 
+We recommend to divide the entire range of data into strata to later sample images from these strata. The procedure for data split generation is provided in the folder binning.
 
 ## Minibatch Sampling (Stage 3)
 ### How to sample the minibatch from bins
 
-Refer it to a folder that shows a demo of the  sampling methods (in a colab notebook or a gif that shows demo of the sampling)
+We explored two methods of sampling images from strata.
+1. Round Robin sampling
+2. Random sampling
+For a simple visualisation of the procedure you can refer to the folder sampling.
+
 
 ## Optimization (Stage 4)
 ## How to include strata aware optimisation in your model
