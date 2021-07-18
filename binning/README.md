@@ -1,4 +1,4 @@
-# 3.2 Revisiting Stage 2 (Creating Data splits)
+# 3.2 Revisiting Stage 2 (Creating Data splits) -- Sec 3.2
 
 This folder contains the method in which the data-splits are created. This procedure partions the count range into balanced strata (bins) using Bayesian optimality criterion (Sec 3). The procedure can be summarised as shown below.
 
