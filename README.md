@@ -25,7 +25,7 @@ For a simple visualisation of the procedure you can refer to the folder named ``
 ## Step 3 : Optimization (Stage 4) 
 ### How to include strata aware optimisation in your model
 
-To reduce variance, we adopt a strata-aware optimization. A pyTorch implementation of that optimisation is provided in this folder.
+To reduce variance, we adopt a strata-aware optimization. A pyTorch implementation of that optimization is provided in this folder.
 
 
 ## Step 4 : Evaluation (Stage-5) 
