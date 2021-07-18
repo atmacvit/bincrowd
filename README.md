@@ -31,4 +31,6 @@ To reduce variance, we adopt a strata-aware optimization. A pyTorch implementati
 ## Step 4 : Evaluation (Stage-5) 
 ### How to evaluate your networks performance at a bin level 
 
-Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range.
+<!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
+
+We evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder ```evaluation``` consists of a notebook to do the same. 
