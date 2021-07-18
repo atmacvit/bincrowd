@@ -1,5 +1,5 @@
 # Wisdom of (Binned) Crowds
-<!-- Add the arvix and conference paper link here -->
+<!-- Add the arvix and conference paper link here once available-->
 
 ### Official Implementation of ACMMM'21 paper "Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"
 
@@ -34,3 +34,6 @@ To reduce variance, we adopt a strata-aware optimization. A pyTorch implementati
 <!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
 
 We evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder ```evaluation``` consists of a notebook to do the same. 
+
+
+<!-- Add the cirtation here once available -->
