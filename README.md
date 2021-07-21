@@ -40,7 +40,7 @@ We evaluate the performance at a strata-level (mean and std) and a pooled mean a
 If you use our work, please cite us at :
 ```
 @inproceedings{10.1145/3474085.3475522,
-author = {Sravya Shivapuja,Mansi Khamkar,Divij Bajaj, Ganesh Ramakrishnan, Ravi Kiran Sarvadevabhatla},
+author = {Sravya Vardhani Shivapuja, Mansi Pradeep Khamkar, Divij Bajaj, Ganesh Ramakrishnan, Ravi Kiran Sarvadevabhatla},
 title = {Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm
 for Crowd Counting
 },
