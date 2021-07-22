@@ -2,7 +2,7 @@
 
 In this folder a demo of how the images should be sampled from bins is provided as a gif below.
 
-| ### Round Robin Sampling | ### Random Sampling |
+| Round Robin Sampling | Random Sampling |
 |----------- | ---------- |
 |![rr](roundrobin.gif)| ![rs](randomsampling.gif)|
 
