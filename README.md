@@ -10,7 +10,9 @@
 ## Step 1 : Data Preparation & Splits (Stages(1,2)) / Binning 
 ### How to find bins for new dataset
 
+<img align="left" width="100" height="100" src="images/bin_demo.jpg">
 We recommend to divide the entire range of counts into strata to later sample images from these strata. The procedure for data split generation is provided in the folder named [```binning```](binning).
+
 
 ## Step 2 : Minibatch Sampling (Stage 3) 
 ### How to sample the minibatch from bins
