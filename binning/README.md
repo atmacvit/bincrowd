@@ -16,19 +16,19 @@ First put your dataset txt in form of ```image_name,image_count``` in a ```.txt`
 To start the training run
 
    ```
-   python train.py -d ./dataset_txt/Train_nwpu.txt
+   python train.py -d ./dataset_txt/Train_nwpu.txt -f multinomial
    ``` 
 
-If you want to get bins on your dataset, change the -d argument to that path itself.
+If you want to get bins on your dataset, change the ```-d``` argument to that path itself. The ```-f``` argument helps choose between the fitness functions (```multinomial,poisson```).
 
 ### Step 3
 
-After training (Step 2) there are best files generated in the ```select_best``` folder. To print out the top two best binning configurations, run the fowllowing code
+After training (Step 2) there are best files generated in the ```select_best``` folder. To print out the top two best binning configurations, run the following code
 
 ```
-python generate_bins.py
+python generate_bins.py  -d ./dataset_txt/Train_nwpu.txt -f multinomial
 ```
-
+Here ```-d``` corresponds to dataset and ```-f``` corresponds to fitness function.
 
 The folder structure of the codes in this folder is:
 ```

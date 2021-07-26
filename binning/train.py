@@ -3,10 +3,7 @@ from load_data import load_data,make_train_test,load_data_patch
 from multinomial import multinomial_bay_block
 from poisson import poisson_bay_block
 from bayesian_blocks import bayesian_blocks
-
 import argparse
-
-
 import os
 import glob
 import random
@@ -64,14 +61,16 @@ for f in files:
 parser = argparse.ArgumentParser()
 # Adding optional argument
 parser.add_argument("-d", "--dataset", help = "Give dataset path in txt",type=str,default="./dataset_txt/Train_nwpu.txt")
+parser.add_argument("-f", "--fitness_function", help = "Select fitness function",type=str,default="multinomial")
+
 # Read arguments from command line
 args = parser.parse_args()
 
 print("You have chosen",args.dataset)
-
+print("Fitness function is chosen as",args.fitness_function)
 
 test_ratio_array =[0.1,0.2,0.25]
-fitness_funct='multinomial'
+fitness_funct=args.fitness_function
 for i in test_ratio_array:
     print("ran")
     print(main(path=[args.dataset],fitness_funct=fitness_funct,

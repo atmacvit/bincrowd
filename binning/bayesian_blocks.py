@@ -320,7 +320,7 @@ def bayesian_blocks(t, x=None, sigma=None,
             break
         ind = last[ind - 1]
     change_points = change_points[i_cp:]
-    print("bins",edges[change_points])
+    # print("bins",edges[change_points])
     return edges[change_points]
 
 # X_train = [1,2,3,4,4,5,5,5,5,6,7,8,0,0,0,0,2,3,4,4,5,5,5,5,6,7,8,0,0,0,0]

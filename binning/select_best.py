@@ -65,7 +65,7 @@ def best_2(data,fitness_funct,test_ratio_arr,gammas):
             # if fitness_funct=="poisson":
             #     path ="./select_best/poi_mu_sig_"+str(i)+".json"
             path = i
-            print("path",i)
+            # print("path",i)
             with open(path, 'r') as fp:
                 testt = json.load(fp)
 
@@ -92,6 +92,6 @@ def best_2(data,fitness_funct,test_ratio_arr,gammas):
     # bins for entire data based on the gamma values 
     print("Best Bins for the corresponding values of prior are ")
     for i in top_2:
-        print(list(bayesian_blocks(data,fitness=fitness_funct,gamma=i)))
+        print(" Gamma : ",i," bins : ",list(bayesian_blocks(data,fitness=fitness_funct,gamma=i)))
 
 
