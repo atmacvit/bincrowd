@@ -12,8 +12,7 @@ Procedure for generating bins:
 2. To start the training run
    ```python train.py -d ./dataset_txt/Train_nwpu.txt``` .
 3. Run the folowing code to finally print out the top two best binning configurations
-    ```python generate_bins.py```
-    according to the newly generated files in ```select_best``` folder.
+    ```python generate_bins.py```.
 
 
 The folder structure of the codes in this folder is:
