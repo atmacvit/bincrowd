@@ -22,7 +22,7 @@ We recommend to divide the entire range of counts into strata which are optimal 
 
 ## Step 2 : Minibatch Sampling (Stage 3) 
 
-<img align="left" width="300" height="200" src="images/sampling_demo.jpg">
+<img align="left" width="350" height="200" src="images/sampling_demo.jpg">
 ### How to sample the minibatch from bins
 
 We explored two methods of sampling images from strata.
