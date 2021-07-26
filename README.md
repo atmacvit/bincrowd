@@ -13,7 +13,9 @@
 <img align="left" width="300" height="200" src="images/bin_demo.jpg">
 
 ### How to find bins for new dataset
-We recommend to divide the entire range of counts into strata to later sample images from these strata. The procedure for data split generation is provided in the folder named [```binning```](binning).
+
+In our paradigm the first step is to create strata over the count range to enable balanced data splits.
+We recommend to divide the entire range of counts into strata which are optimal in Bayesian sense, and later sample images that belong to these strata. The procedure for data split generation is provided in the folder named [```binning```](binning).
 
 
 
