@@ -21,6 +21,8 @@ We recommend to divide the entire range of counts into strata which are optimal 
 <br />
 
 ## Step 2 : Minibatch Sampling (Stage 3) 
+
+<img align="left" width="300" height="200" src="images/sampling_demo.jpg">
 ### How to sample the minibatch from bins
 
 We explored two methods of sampling images from strata.
@@ -29,6 +31,7 @@ We explored two methods of sampling images from strata.
 
 For a simple visualisation of the procedure you can refer to the folder named [```sampling```](sampling).
 
+<br />
 
 ## Step 3 : Optimization (Stage 4) 
 ### How to include strata aware optimisation in your model
