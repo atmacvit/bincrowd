@@ -18,7 +18,7 @@ In our paradigm the first step is to create strata over the count range to enabl
 We recommend to divide the entire range of counts into strata which are optimal in Bayesian sense, and later sample images that belong to these strata. The procedure for data split generation is provided in the folder named [```binning```](binning).
 
 
-
+<br />
 ## Step 2 : Minibatch Sampling (Stage 3) 
 ### How to sample the minibatch from bins
 
