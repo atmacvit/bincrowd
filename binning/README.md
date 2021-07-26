@@ -34,7 +34,7 @@ The folder structure of the codes in this folder is:
 ```
 .
 ├── dataset_txt             # All files of dataset are in this folder.
-│   ├── *.txt               # Dataset-wise txts should be added here from ".\datasets\". 
+│   ├── *.txt               # Dataset-wise txts 
 │   └── ...
 ├── select_best             # After running the train.py file the best configs are stored in this (dataset-split-wise).
 ├── test_jsons              # While running the files generated are stored in here.
