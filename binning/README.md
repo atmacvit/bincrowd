@@ -4,7 +4,10 @@ This folder contains the method in which the data-splits are created. This proce
 
 ![algo](algorithm1.jpg)
 ![algo2](algorithm2.jpg)
-
+<p float="left">
+  <img src="/algorithm1.jpg" width="100" />
+  <img src="/algorithm2.jpg" width="100" /> 
+</p>
 
 
 Procedure for generating bins:
