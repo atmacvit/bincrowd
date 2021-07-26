@@ -19,6 +19,7 @@ We recommend to divide the entire range of counts into strata which are optimal 
 
 
 <br />
+
 ## Step 2 : Minibatch Sampling (Stage 3) 
 ### How to sample the minibatch from bins
 
