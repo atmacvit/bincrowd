@@ -7,12 +7,12 @@ Alorithm Block 1 |  Algorithm block 2
 ![algo](algorithm1.jpg) | ![algo2](algorithm2.jpg)
 
 
-Procedure for generating bins:
-#### Step 1
+## Procedure for generating bins:
+### Step 1
 
 First put your dataset txt in form of ```image_name,image_count``` in a ```.txt```. As an example we have provided the txt files for NWPU dataset.
 
-#### Step 2
+### Step 2
 To start the training run
 
    ```
@@ -21,7 +21,7 @@ To start the training run
 
 If you want to get bins on your dataset, change the -d argument to that path itself.
 
-#### Step 3
+### Step 3
 
 After training (Step 2) there are best files generated in the ```select_best``` folder. To print out the top two best binning configurations, run the fowllowing code
 
