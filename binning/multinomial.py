@@ -151,26 +151,17 @@ def multinomial_bay_block(tr,tes,k,gammas,iter):
             tr_likeli = likeli_mln(X_train,prob_train)
             #print("likeli",likeli)
             likeli_mlnn.append([fold,-likeli,len(bin_edges)-1])#negetive log likeli
-            #saving the gammas, folds, likelihoods
-            # with open("./mln_likeli/"+str(len(tes[0]))+"/mln_"+str(gamma)+"_"+".csv","a+") as output:
-            #     output.write(str(gamma)+","+str(fold)+","+str(-likeli)+"\n")
-            # output.close()
-            # with open("./mln_likeli/"+str(len(tes[0]))+"/mln_bins_"+str(gamma)+"_"+".csv","a+") as output:
-            #     output.write(str(gamma)+","+str(fold)+","+str(bin_edges)+"\n")
-            # output.close()    
+
             for_best.append(-likeli)
             
-            # likeli_mlnn.append([fold,-tr_likeli,len(bin_edges)-1])  # uncomment for train likeli
+            
             fold+=1
         total_likeli.append([gamma,likeli_mlnn])
         mu = np.mean(for_best)
         sig = np.std(for_best)
         dumper[gamma]=mu/sig
 
-        # with open("./mln_likeli/"+str(len(tes[0]))+"/mln_mu_sig_"+".csv","a+") as output:
-        #         output.write(str(gamma)+","+str(fold)+","+str(mu/sig)+"\n")
-        # output.close()
-    # print(total_likeli)  
+  
     with open("./select_best/mln_mu_sig_"+str(len(tes[0]))+".json", "w") as write_file:
         json.dump(dumper, write_file)
 

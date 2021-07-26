@@ -60,10 +60,12 @@ def best_2(data,fitness_funct,test_ratio_arr,gammas):
         new_dict={}
         for j in gammas:
 
-            if fitness_funct=="multinomial":
-                path ="./select_best/mln_mu_sig_"+str(i)+".json"
-            if fitness_funct=="poisson":
-                path ="./select_best/poi_mu_sig_"+str(i)+".json"
+            # if fitness_funct=="multinomial":
+            #     path ="./select_best/mln_mu_sig_"+str(i)+".json"
+            # if fitness_funct=="poisson":
+            #     path ="./select_best/poi_mu_sig_"+str(i)+".json"
+            path = i
+            print("path",i)
             with open(path, 'r') as fp:
                 testt = json.load(fp)
 

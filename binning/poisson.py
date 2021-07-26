@@ -92,30 +92,17 @@ def poisson_bay_block(tr,tes,k,gammas,iter):
             X_train = tr[i]
             X_test =tes[i]
             bin_edges = bayesian_blocks(X_train,fitness='poisson',lam=k,gamma=gamma)
-            # print("edges",bin_edges)
+
             lambdas = find_lamhdas(X_train,bin_edges)
-            # print("lambda",lambdas)
             likli=likeli_poisson(X_test,lambdas,bin_edges)
             tr_likeli= likeli_poisson(X_train,lambdas,bin_edges)
             likeli_poi.append([fold,-likli,len(bin_edges)-1])#negetive log likeli
-            #saving the gammas, folds, likelihoods
-            # with open("./poisson_likeli/"+str(len(tes[0]))+"/poi_"+str(gamma)+"_"+".csv","a+") as output:
-            #     output.write(str(gamma)+","+str(fold)+","+str(-likli)+"\n")
-            # output.close()
-            # with open("./poisson_likeli/"+str(len(tes[0]))+"/poi_bins_"+str(gamma)+"_"+".csv","a+") as output:
-            #     output.write(str(gamma)+","+str(fold)+","+str(bin_edges)+"\n")
-            # output.close() 
             for_best.append(-likli)          
-            # likeli_poi.append([fold,-tr_likeli,len(bin_edges)-1]) # uncomment for train likeli
             fold+=1
         total_likeli.append([gamma,likeli_poi])
         mu = np.mean(for_best)
         sig = np.std(for_best)
         dumper[gamma]=mu/sig
-        # with open("./poisson_likeli/"+str(len(tes[0]))+"/poi_mu_sig_"+".csv","a+") as output:
-        #     output.write(str(gamma)+","+str(fold)+","+str(mu/sig)+"\n")
-        # output.close() 
-    # print(total_likeli)  
     with open("./select_best/poi_mu_sig_"+str(len(tes[0]))+".json", "w") as write_file:
         json.dump(dumper, write_file)
     

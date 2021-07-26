@@ -8,10 +8,13 @@ This folder contains the method in which the data-splits are created. This proce
 
 
 Procedure for generating bins:
-1. First put your dataset in form of ```image_name,image_count``` in a ```.txt```.
-2. Run the ```train.py``` after changing the path at line number 63 ```path path=[r'Val_nwpu_new.txt']```. This generates files in ```select_best``` folder.
-3. Run the ```generate_bins.py``` after this by changing the filenames at line number 11 : ```test_ratio_arr =[2053,4106,5133]``` according to the newly geenrated files in ```select_best``` folder.
-4. Your best bisn will be printed on the screen.
+1. First put your dataset txt in form of ```image_name,image_count``` in a ```.txt```.
+2. To start the training run
+   ```python train.py -d ./dataset_txt/Train_nwpu.txt``` .
+3. Run the folowing code to finally print out the top two best binning configurations
+    ```python generate_bins.py```
+    according to the newly generated files in ```select_best``` folder.
+
 
 The folder structure of the codes in this folder is:
 ```

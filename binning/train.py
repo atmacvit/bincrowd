@@ -4,6 +4,9 @@ from multinomial import multinomial_bay_block
 from poisson import poisson_bay_block
 from bayesian_blocks import bayesian_blocks
 
+import argparse
+
+
 import os
 import glob
 import random
@@ -56,11 +59,22 @@ files = glob.glob('./select_best/*')
 for f in files:
     os.remove(f)
 
+
+# Initialize parser
+parser = argparse.ArgumentParser()
+# Adding optional argument
+parser.add_argument("-d", "--dataset", help = "Give dataset path in txt",type=str,default="./dataset_txt/Train_nwpu.txt")
+# Read arguments from command line
+args = parser.parse_args()
+
+print("You have chosen",args.dataset)
+
+
 test_ratio_array =[0.1,0.2,0.25]
 fitness_funct='multinomial'
 for i in test_ratio_array:
     print("ran")
-    print(main(path=[r'Val_nwpu_new.txt'],fitness_funct=fitness_funct,
+    print(main(path=[args.dataset],fitness_funct=fitness_funct,
         gammas=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9],k=2,
         test_ratio=i,iter=10))
     print("end")
