@@ -44,8 +44,12 @@ For a simple visualisation of the procedure you can refer to the folder named [`
 
 To reduce variance, we adopt a strata-aware optimization. A pyTorch implementation of that optimization is provided in this folder named [```optimization```](optimization).
 
+<br />
 
 ## Step 4 : Evaluation (Stage-5) 
+
+<img align="left" width="250" height="392" src="images/eval_demo.jpg">
+
 ### How to evaluate your networks performance at a bin level 
 
 <!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
