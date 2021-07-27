@@ -52,13 +52,6 @@ The next step of the procedure is to include strata aware optimization into any 
 <br />
 <br />
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
 
 ## Step 4 : Evaluation (Stage-5) 
 
@@ -80,12 +73,7 @@ The final step in our paradigm is to have a better represented evaulation metric
 <br />
 <br />
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+
 
 <!-- Add the citation here once available -->
 Cite us:
