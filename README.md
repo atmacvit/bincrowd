@@ -38,7 +38,7 @@ For a simple visualisation of the procedure you can refer to the folder named [`
 
 ## Step 3 : Optimization (Stage 4) 
 
-<img align="left" width="200" height="275" src="images/opt_demo.jpg">
+<img align="left" width="300" height="415" src="images/opt_demo.jpg">
 
 ### How to include strata aware optimisation in your model
 
