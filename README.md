@@ -25,6 +25,7 @@ We recommend to divide the entire range of counts into strata which are optimal 
 <img align="left" width="350" height="200" src="images/sampling_demo.jpg">
 ### How to sample the minibatch from bins
 Next step in our paradigm is to sample from these bins. We exeprimented with two differnt ways of choosing the bin, they are :
+
     1. Round Robin sampling
     2. Random sampling
 
