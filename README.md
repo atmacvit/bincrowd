@@ -45,6 +45,20 @@ For a simple visualisation of the procedure you can refer to the folder named [`
 To reduce variance, we adopt a strata-aware optimization. A pyTorch implementation of that optimization is provided in this folder named [```optimization```](optimization).
 
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ## Step 4 : Evaluation (Stage-5) 
 
@@ -56,6 +70,17 @@ To reduce variance, we adopt a strata-aware optimization. A pyTorch implementati
 
 We evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same. 
 
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 <!-- Add the citation here once available -->
 Cite us:
