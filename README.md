@@ -40,9 +40,9 @@ For a simple visualisation of the procedure you can refer to the folder named [`
 
 <img align="left" width="300" height="415" src="images/opt_demo.jpg">
 
-### How to include strata aware optimisation in your model
+### How to include strata aware optimization in your network
 
-To reduce variance, we adopt a strata-aware optimization. A pyTorch implementation of that optimization is provided in this folder named [```optimization```](optimization).
+The next step of the procedure is to include strata aware optimization into any network. We add this loss as an additive loss along with a scaleable hyper parameter (λ<sub>1</sub> in Sec 3.4) to the original network's loss function. The idea behind adoption of strata aware optimization is to reduce variance. A pyTorch implementation of that optimization is provided in this folder named [```optimization```](optimization).
 
 <br />
 <br />
@@ -68,7 +68,7 @@ To reduce variance, we adopt a strata-aware optimization. A pyTorch implementati
 
 <!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
 
-We evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same. 
+The final step in our paradigm is to have a better represented evaulation metric. The generally used MAE conceals standard deviation, to bring out this we evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same. 
 
 
 <br />
