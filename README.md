@@ -24,12 +24,11 @@ We recommend to divide the entire range of counts into strata which are optimal 
 
 <img align="left" width="350" height="200" src="images/sampling_demo.jpg">
 ### How to sample the minibatch from bins
+Next step in our paradigm is to sample from these bins. We exeprimented with two differnt ways of choosing the bin, they are :
+    1. Round Robin sampling
+    2. Random sampling
 
-We explored two methods of sampling images from strata.
-1. Round Robin sampling
-2. Random sampling
-
-For a simple visualisation of the procedure you can refer to the folder named [```sampling```](sampling).
+For a simple visualisation of the procedure you can refer to the folder named [```sampling```](sampling). In the same folder, we present a demo on how to include the sampling into any general procedure.
 
 <br />
 
