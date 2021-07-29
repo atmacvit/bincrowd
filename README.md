@@ -3,6 +3,12 @@
 
 ### Official Implementation of ACMMM'21 paper "Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"
 
+
+Add brief over view of the paper here
+<!-- Datasets for training crowd counting deep networks are typically heavy-tailed in count distribution and exhibit discontinuities across the count range. As a result, the de facto statistical measures (MSE, MAE) exhibit large variance and tend to be unreliable indicators of performance across the count range. To address these concerns
+in a holistic manner, we revise processes at various stages of the standard crowd counting pipeline.  -->
+
+
 To include your network in our work please create a pull request with the name ``` <your_network_name>```. 
 Fill up the details of your network in the following format, and add it into the description:
 ```
