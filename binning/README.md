@@ -10,7 +10,7 @@ Alorithm Block 1 |  Algorithm block 2
 ## Procedure for generating bins:
 ### Step 1
 
-First put your dataset txt in form of ```image_name,image_count``` in a ```.txt```. As an example we have provided the txt files for NWPU dataset.
+First put your dataset txt in form of ```image_name,image_count``` in a ```.txt```, for a demo you can look into the folder [```dataset_txt```](binning/dataset_txt). As an example we have provided the txt files for NWPU,UCF-QNRF, STA and STB datasets.
 
 ### Step 2
 To start the training run
@@ -19,7 +19,7 @@ To start the training run
    python train.py -d ./dataset_txt/Train_nwpu.txt -f multinomial
    ``` 
 
-If you want to get bins on your dataset, change the ```-d``` argument to that path itself. The ```-f``` argument helps choose between the fitness functions (```multinomial,poisson```).
+If you want to get bins on your dataset, change the ```-d``` argument to that path of your datasets information stored ```.txt``` format. The ```-f``` argument helps choose between the fitness functions (```multinomial,poisson```).
 
 ### Step 3
 
