@@ -11,7 +11,7 @@ Conference or arvix link:
 Github repo:
 Contact email:
 ```
-Attach a file with the name that includes the dataset that your network uses ```<your_network_name_dataset_name>.txt```. The file should contain row-wise information in the following format:
+Attach a file with the name ```<your_network_name_dataset_name>.txt```, replace ```your_network_name``` with your networks name and ```dataset_name ``` with the dataset name on which results of the file correspond to. The file should contain row-wise information in the following format:
 
 ```
 image_name_1 , predicted_1
@@ -21,7 +21,7 @@ image_name_2 , predicted_2
 .
 image_name_n , predicted_n
 ```
-Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted from the ```image_name_i```.
+Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```.
 
 ## Overview Diagram
 
