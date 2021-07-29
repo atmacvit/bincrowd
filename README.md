@@ -7,7 +7,7 @@ To include your network in our work please create a pull request with the name `
 Fill up the details of your network in the following format, and add it into the description:
 ```
 Network name:
-Conference or arvix link:
+Conference or arxiv link:
 Github repo:
 Contact email:
 ```
