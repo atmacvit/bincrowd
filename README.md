@@ -3,6 +3,26 @@
 
 ### Official Implementation of ACMMM'21 paper "Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"
 
+To include your network in our work please create a pull request with the name ``` <your_network_name>```. 
+Fill up the details of your network in the following format, and add it into the description:
+```
+Network name:
+Conference or arvix link:
+Github repo:
+Contact email:
+```
+Attach a file with the name that includes the dataset that your network uses ```<your_network_name_dataset_name>.txt```. The file should contain row-wise information in the following format:
+
+```
+image_name_1 , predicted_1
+image_name_2 , predicted_2
+.
+.
+.
+image_name_n , predicted_n
+```
+Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted from the ```image_name_i```.
+
 ## Overview Diagram
 
 ![here](images/main.jpg) 
