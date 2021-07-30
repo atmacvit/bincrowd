@@ -8,29 +8,7 @@ The idea behind our work is to tackle the high variance issue left behind by the
 
 
 
-<!-- Datasets for training crowd counting deep networks are typically heavy-tailed in count distribution and exhibit discontinuities across the count range. As a result, the de facto statistical measures (MSE, MAE) exhibit large variance and tend to be unreliable indicators of performance across the count range. To address these concerns
-in a holistic manner, we revise processes at various stages of the standard crowd counting pipeline.  -->
 
-
-To include your network in our work please create a pull request with the name ``` <your_network_name>```. 
-Fill up the details of your network in the following format, and add it into the description:
-```
-Network name:
-Conference or arxiv link:
-Github repo:
-Contact email:
-```
-Attach a file with the name ```<your_network_name_dataset_name>.txt```, replace ```your_network_name``` with your networks name and ```dataset_name ``` with the dataset name on which results of the file correspond to. The file should contain row-wise information in the following format:
-
-```
-image_name_1 , predicted_1
-image_name_2 , predicted_2
-.
-.
-.
-image_name_n , predicted_n
-```
-Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```.
 
 ## Overview Diagram
 
@@ -105,6 +83,26 @@ The final step in our paradigm is to have a better represented evaulation metric
 <br />
 <br />
 
+
+To include your network in our work please create a pull request with the name ``` <your_network_name>```. 
+Fill up the details of your network in the following format, and add it into the description:
+```
+Network name:
+Conference or arxiv link:
+Github repo:
+Contact email:
+```
+Attach a file with the name ```<your_network_name_dataset_name>.txt```, replace ```your_network_name``` with your networks name and ```dataset_name ``` with the dataset name on which results of the file correspond to. The file should contain row-wise information in the following format:
+
+```
+image_name_1 , predicted_1
+image_name_2 , predicted_2
+.
+.
+.
+image_name_n , predicted_n
+```
+Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```.
 
 <!-- Add the citation here once available -->
 
