@@ -39,7 +39,7 @@ Next step in our paradigm is to sample from these bins. We exeprimented with two
     2. Random sampling
 ```
 
-For a simple visualisation of the procedure you can refer to the folder named [```sampling```](sampling). In the same folder, we present a demo on how to include the sampling into any general procedure.
+For a simple visualisation of the procedure you can refer to the folder named [```sampling```](sampling). In the same folder, we present a demo on DM Count network about procedure to include the sampling into any network.
 
 <br />
 
@@ -68,7 +68,7 @@ The next step of the procedure is to include strata aware optimization into any 
 
 <!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
 
-The final step in our paradigm is to have a better represented evaulation metric. The generally used MAE conceals standard deviation, to bring out this we evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same. 
+The final step in our paradigm is to have a better represented evaulation metric. The generally used MAE conceals standard deviation, to bring out this we evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same.
 
 
 <br />
