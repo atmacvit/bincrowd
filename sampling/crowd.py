@@ -91,7 +91,7 @@ class Base(data.Dataset):
             gt_discrete.copy()).float()
 
 
-class Crowd(Base):
+class Crowd_qnrf(Base):
     def __init__(self, root_path, crop_size,
                  downsample_ratio=8,
                  method='train',shuffle=False):
@@ -100,7 +100,7 @@ class Crowd(Base):
         if self.method=='train':
             with open('./json_name/epoch'+str(epoch_num)+'.json', 'r') as outfile:
                 train_list = json.load(outfile)
-                self.im_list = train_epoch_list
+                self.im_list = train_list
         
         print('number of img: {}'.format(len(self.im_list)))
         if method not in ['train', 'val']:
@@ -121,3 +121,134 @@ class Crowd(Base):
             img = self.trans(img)
             name = os.path.basename(img_path).split('.')[0]
             return img, len(keypoints), name
+
+
+class Crowd_nwpu(Base):
+    def __init__(self, root_path, crop_size,
+                 downsample_ratio=8,
+                 method='train',epoch=0):
+        super(Crowd_nwpu,self).__init__(root_path, crop_size, downsample_ratio)
+        self.method = method
+        self.epoch=epoch
+        if self.method =='train':
+            with open('./json_name/epoch'+str(epoch_num)+'.json', 'r') as outfile:
+                train_list = json.load(outfile)
+                self.im_list = train_list
+        
+        if self.method =='test' or self.method=='val':
+            self.im_list = sorted(glob(os.path.join(self.root_path, '*.jpg')))
+        #self.im_list = sorted(glob(os.path.join(self.root_path, '*.jpg')))
+        print('number of img: {}'.format(len(self.im_list)))
+        
+        #print(self.im_list)
+        if method not in ['train', 'val', 'test']:
+            raise Exception("not implement")
+
+    def __len__(self):
+        return len(self.im_list)
+
+    def __getitem__(self, item):
+        #print(item)
+        img_path = self.im_list[item]
+        #print('path',img_path)
+        gd_path = img_path.replace('jpg', 'npy')
+        img = Image.open(img_path).convert('RGB')
+        if self.method == 'train':
+            keypoints = np.load(gd_path)
+            return self.train_transform(img, keypoints)
+        elif self.method == 'val' or self.method=='test':# change this for complete train set
+            keypoints = np.load(gd_path)
+            img = self.trans(img)
+            name = os.path.basename(img_path).split('.')[0]
+            return img, len(keypoints), name
+        elif self.method == 'test':
+            img = self.trans(img)
+            name = os.path.basename(img_path).split('.')[0]
+            return img, name
+
+
+class Crowd_sh(Base):
+    def __init__(self, root_path, crop_size,
+                 downsample_ratio=8,
+                 method='train',epoch=0):
+        super(Crowd_sh, self).__init__(root_path, crop_size, downsample_ratio)
+        self.epoch=epoch
+        self.method = method
+        lis =[]
+        if method =='train':
+            lis = np.genfromtxt(self.root_path+'/stb_train_new.txt',delimiter=',')
+        if method =='val':
+            lis = np.genfromtxt(self.root_path+'/stb_val_new.txt',delimiter=',')
+        mm =[]
+        for i in range(len(lis)):
+            mm.append(self.root_path+str('/IMG_')+str(int(lis[i][0]))+".jpg")
+ 
+        self.im_list = mm
+        if self.method =='train':
+            with open('./json/epoch'+str(epoch)+'.json', 'r') as outfile:
+                self.im_list = json.load(outfile)
+
+        if self.method =='test' or self.method =='val':
+           self.im_list = glob(self.root_path+"/*.jpg")
+
+        print('number of img: {}'.format(len(self.im_list)))
+
+    def __len__(self):
+        return len(self.im_list)
+
+    def __getitem__(self, item):
+        img_path = self.im_list[item]
+        name = os.path.basename(img_path).split('.')[0]
+        gd_path = os.path.join(self.root_path, 'GT_{}.mat'.format(name))
+        img = Image.open(img_path).convert('RGB')
+        keypoints = sio.loadmat(gd_path)['image_info'][0][0][0][0][0]
+
+        if self.method == 'train':
+            return self.train_transform(img, keypoints)
+        elif self.method == 'val' or self.method == 'test':
+            img = self.trans(img)
+            return img, len(keypoints), name
+
+    def train_transform(self, img, keypoints):
+        wd, ht = img.size
+        st_size = 1.0 * min(wd, ht)
+        # resize the image to fit the crop size
+        if st_size < self.c_size:
+            rr = 1.0 * self.c_size / st_size
+            wd = round(wd * rr)
+            ht = round(ht * rr)
+            st_size = 1.0 * min(wd, ht)
+            img = img.resize((wd, ht), Image.BICUBIC)
+            keypoints = keypoints * rr
+        assert st_size >= self.c_size
+        print(wd, ht)
+        assert len(keypoints) >= 0
+        i, j, h, w = random_crop(ht, wd, self.c_size, self.c_size)
+        img = F.crop(img, i, j, h, w)
+        if len(keypoints) > 0:
+            keypoints = keypoints - [j, i]
+            idx_mask = (keypoints[:, 0] >= 0) * (keypoints[:, 0] <= w) * \
+                       (keypoints[:, 1] >= 0) * (keypoints[:, 1] <= h)
+            keypoints = keypoints[idx_mask]
+        else:
+            keypoints = np.empty([0, 2])
+
+        gt_discrete = gen_discrete_map(h, w, keypoints)
+        down_w = w // self.d_ratio
+        down_h = h // self.d_ratio
+        gt_discrete = gt_discrete.reshape([down_h, self.d_ratio, down_w, self.d_ratio]).sum(axis=(1, 3))
+        assert np.sum(gt_discrete) == len(keypoints)
+
+        if len(keypoints) > 0:
+            if random.random() > 0.5:
+                img = F.hflip(img)
+                gt_discrete = np.fliplr(gt_discrete)
+                keypoints[:, 0] = w - keypoints[:, 0]
+        else:
+            if random.random() > 0.5:
+                img = F.hflip(img)
+                gt_discrete = np.fliplr(gt_discrete)
+        gt_discrete = np.expand_dims(gt_discrete, 0)
+
+        return self.trans(img), torch.from_numpy(keypoints.copy()).float(), st_size, torch.from_numpy(
+            gt_discrete.copy()).float()
