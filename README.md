@@ -4,7 +4,7 @@
 ### Official Implementation of ACMMM'21 paper "Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"
 
 
-The idea behind our work is to tackle the high variance issue left behind by the de facto statistical performance measures like (MSE,MAE) in the crowd counting domain. Our recipe involves finding strata that are optimal in a Bayesian sense and later systematically modifying the standard crowd counting pipeline to incorporate decrease of variance at each step.
+The idea behind our work is to tackle the high variance of error that is ignored when considering de facto statistical performance measures like (MSE,MAE) for performance evaluation in the crowd counting domain. Our recipe involves finding strata that are optimal in a Bayesian sense and later systematically modifying the standard crowd counting pipeline to incorporate decrease of variance at each step.
 
 
 
