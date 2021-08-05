@@ -1,6 +1,6 @@
 # Wisdom of (Binned) Crowds
 <!-- Add the arvix and conference paper link here once available-->
-[website](https://deepcount.iiit.ac.in/) | [arvix] | [CVF]
+[website](https://deepcount.iiit.ac.in/) | [arxiv] | [CVF]
 
 ### Official Implementation of ACMMM'21 paper "Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"
 
