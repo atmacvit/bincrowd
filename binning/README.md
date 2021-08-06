@@ -2,7 +2,7 @@
 
 This folder contains the method in which the data-splits are created. This procedure partions the count range into balanced strata (bins) using Bayesian optimality criterion (Sec 3). The procedure can be summarised as shown below.
 
-Alorithm Block 1 |  Algorithm block 2
+Algorithm Block 1 |  Algorithm block 2
 :-------------------------:|:-------------------------:
 ![algo](algorithm1.jpg) | ![algo2](algorithm2.jpg)
 
