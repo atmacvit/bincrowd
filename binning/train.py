@@ -46,13 +46,13 @@ def main(path,fitness_funct,gammas,k,test_ratio,iter):
 
 
 # clearing the files in the folders
-files = glob.glob('./test_jsons/*')
+files = glob.glob('./test_jsons/*.json')
 for f in files:
     os.remove(f)
-files = glob.glob('./train_jsons/*')
+files = glob.glob('./train_jsons/*.json')
 for f in files:
     os.remove(f)
-files = glob.glob('./select_best/*')
+files = glob.glob('./select_best/*.json')
 for f in files:
     os.remove(f)
 

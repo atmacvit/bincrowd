@@ -48,3 +48,4 @@ The folder structure of the codes in this folder is:
 ├── select_best.py          # script that selects the best bin and is called in generate_bins.py
 └── train.py                # For generating the bins split wise.
 ```
+
