@@ -72,8 +72,9 @@ print("Fitness function is chosen as",args.fitness_function)
 test_ratio_array =[0.1,0.2,0.25]
 fitness_funct=args.fitness_function
 for i in test_ratio_array:
-    print("ran")
-    print(main(path=[args.dataset],fitness_funct=fitness_funct,
+    print("Test ratio : ",i)
+    print("----------------Generating Bins----------------")
+    main(path=[args.dataset],fitness_funct=fitness_funct,
         gammas=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9],k=2,
-        test_ratio=i,iter=10))
-    print("end")
+        test_ratio=i,iter=10)
+    print("-------------------Done-------------------")
