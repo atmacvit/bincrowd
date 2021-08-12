@@ -88,12 +88,14 @@ The final step in our paradigm is to have a better represented evaulation metric
 To include your network in our work please create a pull request with the name ``` <your_network_name>```. 
 Fill up the details of your network in the following format, and add it into the description:
 ```
-Network name:
+Network name:                       Ex(DM-Count,...)
+Dataset name:                       Ex(NWPU,STA,STB,...)
+Sampling type:                      Ex(Round Robin, Ramdom Sampling)
 Conference or arxiv link:
 Github repo:
 Contact email:
 ```
-Attach a file with the name ```<your_network_name_dataset_name>.txt```, replace ```your_network_name``` with your networks name and ```dataset_name ``` with the dataset name on which results of the file correspond to. The file should contain row-wise information in the following format:
+Attach a file with the name ```<your_network_name_dataset_name_type_of_binning>.txt```, replace ```your_network_name``` with your networks name, ```dataset_name ``` with the dataset name and ```type_of_sampling``` ( ```rr``` for round robin sampling and ```rs``` for random sampling) on which results of the file correspond to. The file should contain row-wise information in the following format:
 
 ```
 image_name_1 , predicted_1
@@ -105,7 +107,6 @@ image_name_n , predicted_n
 ```
 Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```.
 
-<!-- Add the citation here once available -->
 
 ### Citation
 If you are using our work, Please cite us at :
