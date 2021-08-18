@@ -3,8 +3,7 @@
 
 The demo code for [DM Count](https://github.com/cvlab-stonybrook/DM-Count) is included in [```crowd.py```](crowd.py) , which is modified version of the original repo implementation. The procedure of normal data load has been replaced by loading from epoch wise json files as shown in [link](https://github.com/atmacvit/bincrowd/blob/a62276074b9f8bb25e6e1325f077f0320ca23ed6/sampling/crowd.py#L100)
 
-The dataset-wise epoch json files can be found at :
-Add zenodo link here
+The dataset-wise epoch json files can be found at : [zenodo link](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item87)
 
 In this folder a demo of how the images should be sampled from bins is provided as a gif below.
 
