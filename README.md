@@ -84,6 +84,19 @@ The final step in our paradigm is to have a better represented evaulation metric
 <br />
 <br />
 
+### Pretrained models
+
+The pretrained models that were used to prepare results for different datasets and networks are given in the following zenodo links.
+
+| Network name | link |
+| ------------ |-----|
+| BL (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item2) |
+| DM Count (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item19) |
+| SCARNet (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item36) |
+| SDCNet (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item53) |
+| SFANet (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item70) |
+
+
 ### Pull Request 
 To include your network in our work please create a pull request with the name ``` <your_network_name>```. 
 Fill up the details of your network in the following format, and add it into the description:
