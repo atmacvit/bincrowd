@@ -84,7 +84,7 @@ The final step in our paradigm is to have a better represented evaulation metric
 <br />
 <br />
 
-### Pretrained models
+### Pretrained models and test code
 
 The pretrained models that were used to prepare results for different datasets and networks are given in the following zenodo links. The testing demo script for DMCount is provided in the folder [```testing```](testing).
 
@@ -120,7 +120,7 @@ image_name_n , target_n, predicted_n
 ```
 Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```, and ```target_i``` represents its ground truth.
 
-To generate the above mentioned txt you can take help of the [```code here```]()
+To generate the above mentioned txt you can take help of the [```code here```](https://github.com/atmacvit/bincrowd/blob/806d15a46a65f9ca4cdc1ac207d1ea16e6766aa3/testing/test.py#L59)
 
 ### Citation
 If you are using our work, Please cite us at :

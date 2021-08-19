@@ -1,11 +1,11 @@
 
-### Pretrained models 
+### Pretrained models and test code
 
-The pretrained models that were used to prepare results for different datasets and networks are given in the following zenodo links. The testing demo script for DMCount is provided in this folder.
+This folder contains of a demo test code that can be used for DM Count network. The original testing code was taken from the [```DM Count repo```](https://github.com/cvlab-stonybrook/DM-Count) and modified.
 
-The original testing code was taken from the [```DM Count repo```](https://github.com/cvlab-stonybrook/DM-Count) and modified.
+### Step 1 : Download the pretrained model
 
-Step 1 : Download the pretrained model
+The pretrained models that were used to prepare results for different datasets and networks are given in the following zenodo links. 
 
 | Network name | link |
 | ------------ |-----|
@@ -15,7 +15,7 @@ Step 1 : Download the pretrained model
 | SDCNet (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item53) |
 | SFANet (NWPU,UCF,STA,STB) | [here](https://zenodo.org/record/5176794/preview/wisdom_of_binned_crowds.zip#tree_item70) |
 
-Step 2 : Give the data path and the model path as arguments.
+### Step 2 : Give the data path and the model path as arguments.
 
 Code to test the model :
 
@@ -35,5 +35,5 @@ image_name_n , target_n, predicted_n
 ```
 Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```, and ```target_i``` represents its ground truth.
 
-We encourage you to send us a pull request [```here```](https://github.com/atmacvit/bincrowd/pulls) following the format mentioend [```here```](https://github.com/atmacvit/bincrowd#pull-request) to include your network in our work.
+We encourage you to send us a pull request [```here```](https://github.com/atmacvit/bincrowd/pulls) following the format mentioned [```here```](https://github.com/atmacvit/bincrowd#pull-request) to include your network in our work.
 
