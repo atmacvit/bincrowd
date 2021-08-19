@@ -86,7 +86,7 @@ The final step in our paradigm is to have a better represented evaulation metric
 
 ### Pretrained models
 
-The pretrained models that were used to prepare results for different datasets and networks are given in the following zenodo links.
+The pretrained models that were used to prepare results for different datasets and networks are given in the following zenodo links. The testing demo script for DMCount is provided in the folder [```testing```](testing).
 
 | Network name | link |
 | ------------ |-----|
@@ -111,15 +111,16 @@ Contact email:
 Attach a file with the name ```<your_network_name_dataset_name_type_of_binning>.txt```, replace ```your_network_name``` with your networks name, ```dataset_name ``` with the dataset name and ```type_of_sampling``` ( ```rr``` for round robin sampling and ```rs``` for random sampling) on which results of the file correspond to. The file should contain row-wise information in the following format:
 
 ```
-image_name_1 , predicted_1
-image_name_2 , predicted_2
+image_name_1 , target_1, predicted_1
+image_name_2 , target_2, predicted_2
 .
 .
 .
-image_name_n , predicted_n
+image_name_n , target_n, predicted_n
 ```
-Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```.
+Here ```image_name_i``` can be a ```string``` or an ```int``` that refers to the input image name to the network and ```predicted_i``` refers to the count predicted by your network from the ```image_name_i```, and ```target_i``` represents its ground truth.
 
+To generate the above mentioned txt you can take help of the [```code here```]()
 
 ### Citation
 If you are using our work, Please cite us at :
