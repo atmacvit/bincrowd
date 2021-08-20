@@ -2,7 +2,7 @@
 <!-- Add the arvix and conference paper link here once available-->
 [website](https://deepcount.iiit.ac.in/) | [arxiv](https://arxiv.org/pdf/2108.08784.pdf)
 
-### Official implementation of ACMMM'21 paper "Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"
+### Official implementation of ACMMM'21 paper ["Wisdom of (Binned) Crowds: A Bayesian Stratification Paradigm for Crowd Counting"](https://arxiv.org/pdf/2108.08784.pdf)
 
 
 The idea behind our work is to tackle the high variance of error that is ignored when considering de facto statistical performance measures (MSE,MAE) for performance evaluation in the crowd counting domain. Our recipe involves finding bins across the range of counts that are optimal in a Bayesian sense and later systematically modifying the standard crowd counting pipeline to incorporate decrease of variance at each step.
