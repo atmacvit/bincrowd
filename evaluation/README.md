@@ -11,4 +11,4 @@ The Demo Plot as in Proposed Approach, [Dataset-wise](https://deepcount.iiit.ac.
 
 The Demo Plot as in Proposed Approach, [Network-wise](https://deepcount.iiit.ac.in/dashboard#nwa) Analysis on DM Count network for NWPU dataset can be found [here](https://colab.research.google.com/drive/1LdNAc5hd0xwbqOZ2oHL007rr1Dw4TPRR#scrollTo=s-GhdKWZHZan).
 
-If you are interested in using the evaluation procedure for your network, you could make a copy of this [colab notebook](https://colab.research.google.com/drive/1LdNAc5hd0xwbqOZ2oHL007rr1Dw4TPRR?usp=sharing)  and use the same.
+If you are interested in using the evaluation procedure for your network, you could make a copy of this [colab notebook](https://colab.research.google.com/drive/1LdNAc5hd0xwbqOZ2oHL007rr1Dw4TPRR?usp=sharing) and use the same.
