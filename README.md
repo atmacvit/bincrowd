@@ -9,7 +9,7 @@ The idea behind our work is to tackle the high variance of error that is ignored
 
 The [```website```](https://deepcount.iiit.ac.in/) contains interactive plotly plots, which bring out the issue with using MAE/MSE as evaluation metrics. Additionally, it contains the plots that enable inspection of the performance at a bin-level.
 
-
+<b> TL;DR [tweet thread providing an overview of our approach](https://threadreaderapp.com/thread/1428766431458463745.html) 
 
 ## Overview Diagram
 
