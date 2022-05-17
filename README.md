@@ -61,6 +61,10 @@ The next step of the procedure is to include strata aware optimization into any 
 <br />
 <br />
 
+    
+<br />
+    
+    
 ## Step 4 : Evaluation (Stage-5) 
 
 <!-- <img align="left" width="500" height="392" src="images/stage5-fix.jpg"> -->
