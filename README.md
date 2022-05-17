@@ -63,8 +63,8 @@ The next step of the procedure is to include strata aware optimization into any 
 
 ## Step 4 : Evaluation (Stage-5) 
 
-<img align="left" width="500" height="392" src="images/stage5-fix.jpg">
-
+<!-- <img align="left" width="500" height="392" src="images/stage5-fix.jpg"> -->
+![here](images/stage5-fix.jpg) 
 ### How to evaluate your networks performance at a bin level 
 
 <!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
