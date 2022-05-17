@@ -63,13 +63,13 @@ The next step of the procedure is to include strata aware optimization into any 
 
 ## Step 4 : Evaluation (Stage-5) 
 
-<img align="left" width="250" height="392" src="images/eval_demo.jpg">
+<img align="left" width="500" height="392" src="images/stage5-fix.jpg">
 
 ### How to evaluate your networks performance at a bin level 
 
 <!-- Add a notebook that takes the model and architecture loads it returns the mean and std and if a dataset name and its bins are provided generates the bin level plots (like our website) and plots that shows its performance sample wise across the count range. -->
 
-The final step in our paradigm is to have a better represented evaulation metric. The generally used MAE conceals standard deviation, to bring out this we evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same.
+The final step in our paradigm is to have a better represented evaulation metric. The generally used MAE conceals standard deviation, to bring out this we evaluate the performance at a strata-level (mean and std) and a pooled mean and std. The folder [```evaluation```](evaluation) consists of a notebook to do the same. Additionally this folder consists of code and procedure to evaluate the model using TPER curves and GAME metric.
 
 
 <br />
