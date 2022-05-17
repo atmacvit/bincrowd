@@ -63,7 +63,9 @@ The next step of the procedure is to include strata aware optimization into any 
 
     
 <br />
-    
+<br />
+<br />
+<br />
     
 ## Step 4 : Evaluation (Stage-5) 
 
@@ -86,9 +88,7 @@ The code for evaluation using GAME metric is provided in the  [```evaluation```]
 
 
 
-<br />
-<br />
-<br />
+
 <br />
 
 ### Pretrained models and test code
